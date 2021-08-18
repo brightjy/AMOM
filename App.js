@@ -37,7 +37,7 @@ export default class extends React.Component {
         coords: {latitude, longitude}
       } = await Location.getCurrentPositionAsync();
       this.getWeather(latitude, longitude);
-      this.setState( { isLoading: false });
+      //this.setState( { isLoading: false });
     } catch (error) {
       Alert.alert("서비스 제공을 위해 추적을 허용해주세요.");
     }
